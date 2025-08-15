@@ -1,4 +1,5 @@
 /*
+//ctrl + ; = comentario
 
 let x = 5;
 let y = 1;
@@ -45,11 +46,27 @@ while(count <=10){
     }
 }
 */
-
+/*
 //let array = [[1],2,3,[4]] <- um array dentro de outro array
 //console.log(array[0][0]) <- o primeiro acessa o array, enqt o segundo acessa o valor do segundo array
 let array = [1,2,3,4,5] //declarado por colchetes, itens são separados por vírgulas, indice (posição do elemento) são iniciados sempre em 0
 console.log(array[0]); // acessa uma posição diretamente
 console.log(array[10 - 8]); //acessa uma posição por uma operação matematica
+*/
 
+// let array = [1,2,3,4,5]; //array de 5 elementos e 4 posições
 
+// array[5] = 10; //acessa uma posição inexistente (acrescenta) e adiciona o valor 10
+
+// console.log(array);
+
+// array[5] = 152.1
+// console.log(array)
+
+let matriz = [
+    [1,2,3,4,5],
+    [6,7,8,9,10],
+    [11,12,13,14,15]
+]
+
+console.log(matriz[2][2]) //Acessa o valor 13 dentro da matriz
