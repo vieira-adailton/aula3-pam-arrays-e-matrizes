@@ -74,7 +74,8 @@ console.log(matriz[2][2]) //Acessa o valor 13 dentro da matriz
 */
 
 //Exercicio - Calcular a tabuada do 1 ao 10 usando uma matriz. Lembre-se uma matriz é um array dentro do outro.
-
+/*
+let matriz = []
 for(let col = 0; col <= 10; col++){
     for(let linha = 0; linha <= 10; linha++){
         let tabuada = col * linha
@@ -86,3 +87,17 @@ for(let col = 0; col <= 10; col++){
         console.log(array)
     }
 }
+*/
+
+//funções
+
+function somar(a,b){
+    return a+b;
+}
+
+let subtrair = (a,b) => a-b // Arrow function
+
+let dividir = function(a,b){ //Lambda function
+    return a / b
+}
+console.log(somar(50,50), dividir(6,2), subtrair(10,3));
