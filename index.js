@@ -95,9 +95,36 @@ function somar(a,b){
     return a+b;
 }
 
+function multiplicar(a,b){
+    return a * b
+}
+
 let subtrair = (a,b) => a-b // Arrow function
 
 let dividir = function(a,b){ //Lambda function
     return a / b
 }
-console.log(somar(50,50), dividir(6,2), subtrair(10,3));
+//console.log(somar(50,50), dividir(6,2), subtrair(10,3));
+
+function calc (operacao, a ,b){
+    switch (operacao){
+        case 'somar' :
+            console.log(somar(a,b));
+            break;
+        case 'subtrair':
+            console.log(subtrair(a,b));
+            break;
+        case 'multiplicar':
+            console.log(multiplicar(a,b));
+            break;
+        case 'dividir':
+            console.log(dividir(a,b));
+            break;
+        default:
+            console.log("Operação inexistente");
+            break
+    }
+    return
+}
+
+calc('multiplicar', 100,3)
