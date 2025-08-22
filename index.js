@@ -165,7 +165,7 @@ function tabuada(num, matriz, res){
 tabuada(5)
 */
 
-//Ex2
+//Ex2 -- correção pelo professor
 function fibonacci(limite){
  let inicio = 1;
  let fim = 0;
@@ -179,7 +179,7 @@ function fibonacci(limite){
     inicio = sequencia;
  }
 }
-fibonacci(12)
+fibonacci(30)
 /*
 //Ex3
 function tamanhoArray(arr){
