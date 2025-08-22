@@ -90,7 +90,7 @@ for(let col = 0; col <= 10; col++){
 */
 
 //funções
-
+/*
 function somar(a,b){
     return a+b;
 }
@@ -104,6 +104,9 @@ let subtrair = (a,b) => a-b // Arrow function
 let dividir = function(a,b){ //Lambda function
     return a / b
 }
+
+let power = (a,b) => Math.pow(a,b)
+let porcentagem = (a,b) => (a * b)/100
 //console.log(somar(50,50), dividir(6,2), subtrair(10,3));
 
 function calc (operacao, a ,b){
@@ -120,6 +123,12 @@ function calc (operacao, a ,b){
         case 'dividir':
             console.log(dividir(a,b));
             break;
+        case 'power':
+            console.log(power(a,b))
+            break
+        case 'porcentagem':
+            console.log(porcentagem(a,b))
+            break
         default:
             console.log("Operação inexistente");
             break
@@ -127,4 +136,57 @@ function calc (operacao, a ,b){
     return
 }
 
-calc('multiplicar', 100,3)
+calc('porcentagem', 100,10)
+*/
+
+/*
+Exercicios 
+
+1- Crie uma função que receba um parametro e retorne a tabuada desse número; detalhe use um laço de repetição
+
+2- Crie uma função que receba um parametro que indique quantos e quais números da sequencia fibonnaci deve ser retornado
+
+3- Crie uma funçao que receba um array e retorne seu tamanho, ou seja, quantos elementos o array possui dentro dele
+*/
+
+//Ex1
+
+/*
+function tabuada(num, matriz, res){
+    matriz = []
+    for(let valor = 0; valor <= 10; valor++){
+        res = valor * num
+        matriz.push(res);
+        
+    }
+    console.log(matriz)
+}
+
+tabuada(5)
+*/
+
+//Ex2
+function fibonacci(limite){
+ let inicio = 1;
+ let fim = 0;
+ let sequencia = 0;
+
+ console.log(`Os ${limite} primeiros de Fibonnaci são: `)
+ for(let count = 1; count < limite; count ++){
+    console.log(fim);
+    sequencia = inicio + fim
+    fim = inicio;
+    inicio = sequencia;
+ }
+}
+fibonacci(12)
+/*
+//Ex3
+function tamanhoArray(arr){
+    return console.log(arr.length)
+}
+
+let array = [1,2,3,4,5,6,7,8,9,0]
+
+tamanhoArray(array)
+*/
